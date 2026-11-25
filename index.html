@@ -3,15 +3,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Riichi Guide</title>
+  <title>Riichi Yaku Review Sheet</title>
   <style>
     body { font-family: system-ui, sans-serif; max-width: 600px; margin: 15vh auto; padding: 0 1rem; text-align: center; }
     a.button { display: inline-block; padding: .8rem 1.6rem; background: #1a7f4b; color: #fff; text-decoration: none; border-radius: 8px; font-weight: 600; }
   </style>
 </head>
 <body>
-  <h1>Riichi Guide</h1>
-  <p>A one-page-per-han reference for every riichi mahjong yaku, with closed and open han values and example hands.</p>
-  <a class="button" href="yaku.pdf" download>Download PDF</a>
+  <h1>Riichi Yaku Review Sheet</h1>
+  <p>Your download should start automatically.</p>
+  <a class="button" id="dl" href="yaku.pdf" download="Riichi-Yaku-Review-Sheet.pdf">Download PDF</a>
+  <script>
+    window.addEventListener("load", function () {
+      setTimeout(function () { document.getElementById("dl").click(); }, 500);
+    });
+  </script>
 </body>
 </html>
